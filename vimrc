@@ -1,7 +1,20 @@
-this is a test file from github
-if u can see this file 
-u r successfully get vim config file from github.com
+syntax on
+set number
+set relativenumber
+set cursorline
+set wrap
+set showcmd
 
-Great!!!!
-I can config my vim from github.com
-this paragraph is come from kali linux.
+set wildmenu
+set hlsearch
+exec "nohlsearch"
+set incsearch
+set ignorecase
+set smartcase
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'connorholyday/vim-snazzy'
+
+call plug#end()
