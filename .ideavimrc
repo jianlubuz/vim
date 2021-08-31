@@ -1,0 +1,79 @@
+set number
+set relativenumber
+
+" 显示当前模式
+set showmode
+
+" 共享系统剪切板
+set clipboard=unnamed
+
+" 设置命令历史记录条数
+set history=2000
+
+" 关闭兼容vi
+set nocompatible
+
+" 开启语法高亮功能
+syntax enable
+
+" 允许用指定语法高亮配色方案替换默认配色方案
+syntax on
+
+" 模式搜索实时预览, 增量搜索
+set incsearch
+
+" 高亮搜索
+set hlsearch
+
+" 忽略大小写(该命令配合smartcase使用较好, 否则不要开启)
+set ignorecase
+
+" 模式查找时智能忽略大小写
+set smartcase
+
+" vim自身命令行模式智能补全
+set wildmenu
+
+" 总是显示状态栏
+set laststatus=2
+
+" 高亮显示当前行/列
+set cursorline
+
+" 禁止折行
+set nowrap
+
+" 设置格式化时制表符占用空格数
+set shiftwidth=4
+
+" 基于缩进或语法进行代码折叠
+set foldmethod=indent
+set foldmethod=syntax
+
+" 启动vim时关闭折叠代码
+set nofoldenable
+
+" 设置前导键
+let mapleader=";"
+
+" 使用IDEA内部功能
+" go to class 
+nnoremap <Leader>gc :action GotoClass<CR>
+
+" 显示当前文件的文件路径
+nnoremap <Leader>fp :action ShowFilePath<CR>
+
+" run
+nnoremap <Leader>r :action RunClass<CR>
+
+" usage
+nnoremap <Leader>u :action FindUsages<CR>
+
+" New File
+nnoremap <Leader>n :action NewFile<CR>
+
+" FindInPath
+nnoremap <Leader>fip :action FindInPath<CR>
+
+" ShowBookmarks
+nnoremap <Leader>sb :action ShowBookmarks<CR>
