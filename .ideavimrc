@@ -58,22 +58,20 @@ let mapleader=";"
 
 " 使用IDEA内部功能
 " go to class 
-nnoremap <Leader>gc :action GotoClass<CR>
+" nnoremap <Leader>gc :action GotoClass<CR>
 
 " 显示当前文件的文件路径
 nnoremap <Leader>fp :action ShowFilePath<CR>
 
-" run
-nnoremap <Leader>r :action RunClass<CR>
-
 " usage
-nnoremap <Leader>u :action FindUsages<CR>
-
-" New File
-nnoremap <Leader>n :action NewFile<CR>
+" nnoremap <Leader>u :action FindUsages<CR>
+nnoremap <Leader>u :action ShowUsages<CR>
 
 " FindInPath
-nnoremap <Leader>fip :action FindInPath<CR>
+" nnoremap <Leader>fip :action FindInPath<CR>
 
 " ShowBookmarks
-nnoremap <Leader>sb :action ShowBookmarks<CR>
+nnoremap <Leader>m :action ShowBookmarks<CR>
+
+" 新建java类/接口/枚举
+nnoremap <Leader>nc :action NewClass<CR>
